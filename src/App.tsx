@@ -1,10 +1,16 @@
 import React from "react";
-import { Button } from "antd";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Result from "./pages/Result";
 
 const App: React.FC = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
+  <>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/result" element={<Result />} />
+    </Routes>
+  </>
 );
 
 export default App;
