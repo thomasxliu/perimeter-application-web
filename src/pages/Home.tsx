@@ -1,10 +1,8 @@
 import React from "react";
-import { Button } from "antd";
 
-const Home: React.FC = () => (
-  <div>
-    <Button type="primary">Button</Button>
-  </div>
-);
+import CommonLayout from "../layouts/CommonLayout";
+import ImageUpload from "../components/ImageUpload";
+
+const Home: React.FC = () => <CommonLayout children={<ImageUpload />} />;
 
 export default Home;

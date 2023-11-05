@@ -1,10 +1,7 @@
 import React from "react";
-import { Button } from "antd";
 
-const Result: React.FC = () => (
-  <div>
-    <Button type="default">Button</Button>
-  </div>
-);
+import CommonLayout from "../layouts/CommonLayout";
+
+const Result: React.FC = () => <CommonLayout children={undefined} />;
 
 export default Result;
