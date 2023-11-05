@@ -16,7 +16,14 @@ const ImageUpload: React.FC = () => (
         resetText="Reset Changes"
         modalOk="Publish"
       >
-        <Upload maxCount={1} action={"https://localhost:8080/frame"}>
+        <Upload
+          maxCount={1}
+          action={"http://localhost:8080/picture"}
+          showUploadList={false}
+          onChange={(f) => {
+            console.log(f);
+          }}
+        >
           <Button type="primary">Upload Picture Here</Button>
         </Upload>
       </ImgCrop>
